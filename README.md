@@ -33,3 +33,4 @@ The basemap is the city centre of Vienna, Austria. Available under https://www.w
 
 - Ali Kilic (2021), available under: https://gislayer.medium.com/using-geojson-indexeddb-together-giscoding-7f1d53df9abe
 - Geodatenviewer der Stadtvermessung Wien, available under: https://www.wien.gv.at/ma41datenviewer/public/
+  Datenquelle: Stadt Wien – data.wien.gv.at
