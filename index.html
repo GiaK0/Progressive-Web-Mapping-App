@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Web Mapping App</title>
+    <link rel="stylesheet" href="lib/openlayers/ol.css" type="text/css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="lib/openlayers/ol.js"></script>
+  
+    <style>
+    .map {
+        width: 100%;
+        height: 1500px;
+    }
+
+    .topRight{
+      position: absolute;
+      top: 90px;
+      right: 0px;
+      z-index: 2;
+    }
+
+    button{
+      display: block;
+      width: 60%;
+      height: 40px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(40, 118, 244);
+      border: 1px solid rgb(1, 19, 1);
+      border-color:#0e0101;
+      cursor: pointer;
+      transition-duration: 0,4s;
+    }
+
+    button:hover {
+      background-color: rgb(102, 163, 242);
+      color:rgba(0, 0, 0, 0.903);
+    }
+    .locate {
+      top: 4em;
+      left: .5em;
+    }
+
+    h1 {
+      text-align:center;
+      
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <h1><u>Overview of the city centre of Vienna</u></h1>
+    <div id="map" class="map"></div>
+    <div class="topRight">     
+      <button onclick="draw('Point')" title="Draw Point"><font size="5"><b>&#8408</b></font></button>
+      <button onclick="draw('LineString')" title="Draw Line"><font size="5"><b>&#8212</b></font></button>
+      <button onclick="draw('Polygon')" title="Draw Polygon"><font size="5"><b>&#916</b></font></button>
+      <button onclick="readGeoJSON()" title="Add a GeoJSON file"><b>Add GeoJSON</b></button>
+      <button onclick="removeGeoJSON()" title="Remove GeoJSON file" id="removeButton"><b>Remove GeoJSON</b></button>
+      <button onclick="clearAll()" title="Clear all data"><b>Clear All</b></button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="map.js"></script>
+    <script src="indexedDB.js"></script>
+
+</body>
+</html>
+
+    
+    

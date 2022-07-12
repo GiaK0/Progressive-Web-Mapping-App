@@ -1,0 +1,33 @@
+{
+    "short_name": "PWMA",
+    "name": "Progressive Web Mapping App",
+    "icons": [
+      {
+        "src": "/img/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/index.html?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [
+      {
+        "name": "Maps",
+        "short_name": "Maps",
+        "description": "Openlayersmap",
+        "url": "/map?source=pwa",
+        "icons": [{ "src": "/img/logo.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Openlayers_Background",
+  "screenshots": [
+    {
+      "src": "/img/logo-background.png",
+      "type": "image/png",
+      "sizes": "720x540"
+    }
+  ]    
+  }
