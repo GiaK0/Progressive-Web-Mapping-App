@@ -20,7 +20,7 @@ The basemap is the city centre of Vienna, Austria. Available under https://www.w
 ## Installation
 
 - With the [app.js](app.js) file the service worker will be registered. With the [sw.js](sw.js) file the service worker will be installed and    activated. 
-- The basemap will be embedded with [map.js](src/map.js) as rastertiles. The indexedDB will be created with [indexedDB.js](src/indexedDB.js). The files saved in the indexedDB will be available offline and online. 
+- The basemap will be embedded with [map.js](map.js) as rastertiles. The indexedDB will be created with [indexedDB.js](indexedDB.js). The files saved in the indexedDB will be available offline and online. 
 
 ## Start
 
